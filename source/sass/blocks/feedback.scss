@@ -1,0 +1,40 @@
+.feedback__form-wrap p {
+  text-align: center;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.feedback__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__item {
+  margin-bottom: 20px;
+}
+
+.feedback__fieldset input {
+  width: 327px;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  padding: 17px 0 11px 30px;
+
+  @media (max-width: $tablets-max) {
+    width: 268px;
+    padding: 17px 0 13px 0;
+  }
+
+  &::placeholder {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: $tablets-max) {
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link() {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@mixin hover {
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

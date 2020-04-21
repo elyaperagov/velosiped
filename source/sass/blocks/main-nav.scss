@@ -1,0 +1,26 @@
+.main-nav {
+  padding: 21px 34px 0 32px;
+
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-nav__link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 32px;
+  opacity: 0.7;
+
+  &:hover {
+    color: #0266c1;
+  }
+}
