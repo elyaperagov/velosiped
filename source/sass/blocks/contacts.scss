@@ -1,0 +1,27 @@
+.contacts {
+  display: flex;
+  padding: 45px 0 96px 0;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 720px;
+}
+
+.contacts__email {
+  margin-left: 40px;
+  width: 290px;
+
+  span {
+    vertical-align: top;
+    padding-left: 10px;
+  }
+}
+
+.contacts__phone {
+  width: 230px;
+
+  span {
+    vertical-align: top;
+    padding-right: 25px;
+    padding-left: 14px;
+  }
+}

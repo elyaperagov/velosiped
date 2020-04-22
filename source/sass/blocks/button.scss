@@ -9,6 +9,17 @@
   font-size: 15px;
   line-height: 14px;
 
+  &--play {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    background-image: url("../img/play.svg");
+    width: 65px;
+    height: 65px;
+    top: 44%;
+    left: 47%;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.7;

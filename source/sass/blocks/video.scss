@@ -1,0 +1,37 @@
+.video {
+  background-color: #131314;
+  height: 706px;
+}
+
+.video__inner {
+  padding: 121px 0 0;
+}
+
+.video__inner h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  max-width: 380px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+
+.video__inner p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  opacity: 0.7;
+  max-width: 340px;
+  margin: 0 auto;
+  padding-top: 19px;
+}
+
+.video__snippet {
+  transform: translateY(55px);
+  text-align: center;
+  position: relative;
+}
