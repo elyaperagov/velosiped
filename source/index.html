@@ -10,7 +10,8 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#about" aria-label="О нас">О нас</a>
@@ -26,48 +27,50 @@
           </li>
         </ul>
       </nav>
+      <section class="general">
+        <div class="general__inner">
+          <div class="general__info">
+            <div class="general__icon-wrapper">
+              <svg class="general__icon" width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
+                <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"/>
+                <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"/>
+                <path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6"/>
+                <path d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6"/>
+                <path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"/>
+                <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"/>
+              </svg>
+            </div>
+            <h1>Мы продаём велосипеды</h1>
+            <div class="general__slogan">
+              <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <section class="general">
-      <div class="general__inner">
-        <div class="general__info">
-          <svg width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
-            <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"/>
-            <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"/>
-            <path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6"/>
-            <path d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6"/>
-            <path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"/>
-            <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"/>
-          </svg>
-          <h1>Мы продаём велосипеды</h1>
-          <div class="general__slogan">
-            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-          </div>
-        </div>
-        <div class="feedback">
-          <div class="feedback__form-wrap">
-            <p>Заполните поля ниже и мы подберём велосипед Вашей мечты</p>
-            <form method="POST" action="https://echo.htmlacademy.ru">
-              <div class="feedback__fieldset">
-                <div class="feedback__item">
-                  <label class="visually-hidden" for="feedback__name-input"></label>
-                  <input id="feedback__name-input" name="name" type="text" placeholder="Введите Ваше имя" required="">
-                </div>
-                <div class="feedback__item">
-                  <label class="visually-hidden" for="feedback__phone-input"></label>
-                  <input id="feedback__phone-input" class="tel" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="">
-                </div>
-                <div class="feedback__item">
-                  <button type="submit" class="button button--submit">Подобрать велосипед мечты</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
   </header>
   <main>
+    <div class="feedback">
+      <div class="feedback__form-wrap">
+        <p>Заполните поля ниже и мы подберём велосипед Вашей мечты</p>
+        <form method="POST" action="https://echo.htmlacademy.ru">
+          <div class="feedback__fieldset">
+            <div class="feedback__item">
+              <label class="visually-hidden" for="feedback__name-input"></label>
+              <input id="feedback__name-input" name="name" type="text" placeholder="Введите Ваше Имя" required="">
+            </div>
+            <div class="feedback__item">
+              <label class="visually-hidden" for="feedback__phone-input"></label>
+              <input id="feedback__phone-input" class="tel" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="">
+            </div>
+            <div class="feedback__item">
+              <button type="submit" class="button button--submit">Подобрать велосипед мечты</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <section class="about">
       <h2>Несколько фактов о нас</h2>
       <ul class="about__list">
@@ -112,6 +115,7 @@
           <li class="types__item types__item--road">
             <picture>
               <!--<source srcset="img/dorozhniy-desktop@1.webp 1x, img/dorozhniy-desktop@2x.webp 2x" type="image/webp">-->
+              <source media="(max-width: 1024px)" srcset="img/dorozhniy-tablet@1x.jpg 1x, img/dorozhniy-tablet@2x.jpg 2x">
               <!-- 1х: 342 x 503; 2x: 684 x 1006 -->
               <img src="img/dorozhniy-desktop@1x.jpg" srcset="img/dorozhniy-desktop@2x.jpg 2x" width="342" height="503" alt="дорожный велосипед">
             </picture>
@@ -120,6 +124,7 @@
           <li class="types__item types__item--mountain">
             <picture>
               <!--<source srcset="img/gorniy-desktop@1x.webp 1x, img/gorniy-desktop@1x.webp 2x" type="image/webp">-->
+              <source media="(max-width: 1024px)" srcset="img/gorniy-tablet@1x.jpg 1x, img/gorniy-tablet@2x.jpg 2x">
               <!-- 1х: 342 x 566; 2x: 684 x 1132 -->
               <img src="img/gorniy-desktop@1x.jpg" srcset="img/gorniy-desktop@2x.jpg 2x" width="342" height="566" alt="горный велосипед">
             </picture>
@@ -128,6 +133,7 @@
           <li class="types__item types__item--children">
             <picture>
               <!--<source srcset="img/detskiy-desktop@1x.webp 1x, img/detskiy-desktop@2x.webp 2x" type="image/webp">-->
+              <source media="(max-width: 1024px)" srcset="img/detskiy-tablet@1x.jpg 1x, img/detskiy-tablet@2x.jpg 2x">
               <!-- 1х: 342 x 513; 2x: 684 x 1026 -->
               <img src="img/detskiy-desktop@1x.jpg" srcset="img/detskiy-desktop@2x.jpg 2x" width="342" height="513" alt="детский велосипед">
             </picture>

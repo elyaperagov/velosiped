@@ -1,20 +1,35 @@
 .video {
   background-color: #131314;
   height: 706px;
+
+  @media (max-width: $tablets-max) {
+    height: 413px;
+  }
 }
 
 .video__inner {
   padding: 121px 0 0;
+
+  @media (max-width: $tablets-max) {
+    padding: 70px 0 0;
+  }
 }
 
 .video__inner h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  max-width: 380px;
+  max-width: 430px;
   color: #ffffff;
   margin: 0 auto;
-  padding-left: 10px;
+  text-align: center;
+
+  @media (max-width: $tablets-max) {
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .video__inner p {
@@ -25,13 +40,26 @@
   letter-spacing: -0.005em;
   color: #ffffff;
   opacity: 0.7;
-  max-width: 340px;
+  max-width: 410px;
   margin: 0 auto;
   padding-top: 19px;
+
+  @media (max-width: $tablets-max) {
+    max-width: 430px;
+  }
 }
 
 .video__snippet {
   transform: translateY(55px);
   text-align: center;
   position: relative;
+
+  @media (max-width: $tablets-max) {
+    transform: translateY(42px);
+
+    img {
+      width: 503px;
+      height: 282px;
+    }
+  }
 }

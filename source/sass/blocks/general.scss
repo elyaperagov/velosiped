@@ -1,16 +1,35 @@
 .general__inner {
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
+  max-width: 470px;
   display: flex;
-  padding-top: 250px;
-  padding-bottom: 220px;
+  padding: 250px 0 220px 0;
+
+  @media (max-width: $tablets-max) {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 63px 0 63px;
+  }
 }
 
 .general__info {
-  // max-width: 50%;
-  margin-right: 90px;
   padding: 15px 50px 0 11px;
+
+  @media (max-width: $tablets-max) {
+    padding: 0;
+  }
+}
+
+.general__icon-wrapper {
+  width: 67.6px;
+  height: 20.28px;
+  position: relative;
+}
+
+.general__icon {
+  @media (max-width: $tablets-max) {
+    position: absolute;
+    left: -123px;
+    top: -60px;
+  }
 }
 
 .general__inner h1 {
@@ -18,7 +37,14 @@
   color: #ffffff;
   font-size: 46px;
   line-height: 64px;
-  margin: 25px 0;
+  margin: 30px 0 25px;
+
+  @media (max-width: $tablets-max) {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    margin: 31px 0 18px;
+  }
 }
 
 .general__inner p {
@@ -27,4 +53,13 @@
   font-size: 20px;
   line-height: 32px;
   opacity: 0.8;
+
+  @media (max-width: $tablets-max) {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #ffffff;
+    opacity: 0.8;
+  }
 }

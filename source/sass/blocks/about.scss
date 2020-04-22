@@ -2,6 +2,11 @@
   max-width: 1166px;
   margin: 0 auto;
   overflow: hidden;
+
+  @media (max-width: $tablets-max) {
+    max-width: 555px;
+    // max-width: 73%;
+  }
 }
 
 .about h2 {
@@ -14,10 +19,23 @@
   margin: 0 auto;
   max-width: 380px;
   padding: 150px 0 22px 18px;
+
+  @media (max-width: $tablets-max) {
+    font-size: 24px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #1f1f1f;
+    padding: 50px 0 21px 0;
+  }
 }
 
 .about__item {
   max-width: 250px;
+
+  @media (max-width: $tablets-max) {
+    margin-bottom: 32px;
+  }
 }
 
 .about__list {
@@ -25,6 +43,11 @@
   display: flex;
   justify-content: space-between;
   padding: 0 5px 152px 8px;
+
+  @media (max-width: $tablets-max) {
+    flex-wrap: wrap;
+    padding: 0 5px 38px 8px;
+  }
 }
 
 .about__number {
@@ -39,6 +62,10 @@
 .about__number p {
   margin: 0;
   padding: 26px 0 0;
+
+  @media (max-width: $tablets-max) {
+    padding: 8px 0 2px;
+  }
 }
 
 .about__text {

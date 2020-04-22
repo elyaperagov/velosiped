@@ -2,6 +2,10 @@
   // padding: 248px 242px 0;
   padding: 248px 0 0;
   margin: 0 auto;
+
+  @media (max-width: $tablets-max) {
+    padding: 156px 0 0;
+  }
 }
 
 .location h2 {
@@ -11,6 +15,11 @@
   letter-spacing: -0.005em;
   width: 240px;
   margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: $tablets-max) {
+    font-size: 24px;
+  }
 }
 
 
@@ -21,11 +30,21 @@
   color: rgba(0, 0, 0, 0.7);
   width: 555px;
   margin: 0 auto;
-  padding: 28px 19px 40px 0;
+  padding: 28px 0 40px 0;
+
+  @media (max-width: $tablets-max) {
+    width: 100%;
+    padding: 19px 0 20px;
+  }
 }
 
 .location__map {
   width: 957px;
   height: 530px;
   margin: 0 auto;
+
+  @media (max-width: $tablets-max) {
+    width: 698px;
+    height: 545px;
+  }
 }

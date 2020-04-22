@@ -1,9 +1,38 @@
+.feedback {
+  position: relative;
+  width: 100%;
+}
+
+.feedback__form-wrap {
+  @media (min-width: $desktops) {
+    position: absolute;
+    top: -526px;
+    left: 58%;
+    width: 327px;
+  }
+
+  @media (max-width: $tablets-max) {
+    width: 321px;
+    margin: 0 auto;
+  }
+}
+
+
 .feedback__form-wrap p {
   text-align: center;
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
-  margin: 20px 0;
+  margin: 23px 0 20px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+
+  @media (max-width: $tablets-max) {
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin: 71px 0 26px;
+  }
 }
 
 .feedback__fieldset {
@@ -16,13 +45,12 @@
 }
 
 .feedback__fieldset input {
-  width: 327px;
+  width: 100%;
   border: 1px solid #c9ccd4;
   border-radius: 6px;
   padding: 17px 0 11px 30px;
 
   @media (max-width: $tablets-max) {
-    width: 268px;
     padding: 17px 0 13px 0;
   }
 
@@ -32,9 +60,11 @@
     line-height: 24px;
 
     @media (max-width: $tablets-max) {
-      font-size: 14px;
-      line-height: 21px;
-      text-align: center;
+      font-size: 15px;
+      line-height: 24px;
+      color: #1c1c1c;
+      opacity: 0.5;
+      padding-left: 20px;
     }
   }
 }

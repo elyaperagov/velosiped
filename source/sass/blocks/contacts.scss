@@ -4,6 +4,10 @@
   justify-content: space-around;
   margin: 0 auto;
   width: 720px;
+
+  @media (max-width: $tablets-max) {
+    padding: 22px 0 96px;
+  }
 }
 
 .contacts__email {
