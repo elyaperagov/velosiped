@@ -35,17 +35,17 @@
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--about">
               <a class="main-nav__link" href="#about" aria-label="О нас">О нас</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--types">
               <a class="main-nav__link" href="#types" aria-label="Виды велосипедов">Виды велосипедов</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--video">
               <a class="main-nav__link" href="#video" aria-label="Видео про велосипеды">Видео про велосипеды</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#contacts" aria-label="Контакты">Контакты</a>
+            <li class="main-nav__item main-nav__item--location">
+              <a class="main-nav__link" href="#location" aria-label="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -152,7 +152,7 @@
               <li class="types__item types__item--children">
                 <picture>
                   <source media="(max-width: 1024px)" srcset="img/detskiy-tablet@1x.jpg 1x, img/detskiy-tablet@2x.jpg 2x">
-                    <source media="(max-width: 1024px)" srcset="img/gorniy-tablet@1x.webp 1x, img/gorniy-tablet@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 1024px)" srcset="img/gorniy-tablet@1x.webp 1x, img/gorniy-tablet@2x.webp 2x" type="image/webp">
                   <source srcset="img/detskiy-desktop@1x.webp 1x, img/detskiy-desktop@2x.webp 2x" type="image/webp">
                   <!-- 1х: 342 x 513; 2x: 684 x 1026 -->
                   <img src="img/detskiy-desktop@1x.jpg" srcset="img/detskiy-desktop@2x.jpg 2x" width="342" height="513" alt="детский велосипед">
@@ -181,8 +181,9 @@
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
           <div class="location__map" id="map">
           </div>
-        </section>
-      </main>
+          </section></main></div>
+        
+      
     </div>
     <footer class="footer">
       <div class="footer__contacts">
@@ -204,7 +205,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

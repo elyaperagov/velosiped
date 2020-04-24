@@ -72,19 +72,14 @@
 
   @media (max-width: $tablets-max) {
     transform: translateY(42px);
-
-    img {
-      width: 503px;
-      height: 282px;
-    }
+    margin: 0 auto;
+    width: 503px;
+    min-height: 282px;
   }
 
   @media (max-width: $mobiles-max) {
     transform: translateY(54px);
-
-    img {
-      width: 288px;
-      height: 161.66px;
-    }
+    width: 288px;
+    min-height: 161.66px;
   }
 }
