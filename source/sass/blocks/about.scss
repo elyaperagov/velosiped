@@ -7,6 +7,11 @@
     max-width: 555px;
     // max-width: 73%;
   }
+
+  @media (max-width: $mobiles-max) {
+    padding: 0 15px;
+    max-width: 100%;
+  }
 }
 
 .about h2 {
@@ -17,7 +22,6 @@
   letter-spacing: -0.005em;
   color: #1f1f1f;
   margin: 0 auto;
-  max-width: 380px;
   padding: 150px 0 22px 18px;
 
   @media (max-width: $tablets-max) {
@@ -26,7 +30,7 @@
     text-align: center;
     letter-spacing: -0.005em;
     color: #1f1f1f;
-    padding: 50px 0 21px 0;
+    padding: 53px 0 22px;
   }
 }
 
@@ -36,17 +40,36 @@
   @media (max-width: $tablets-max) {
     margin-bottom: 32px;
   }
+
+  @media (max-width: $mobiles-max) {
+    margin-bottom: 23px;
+    max-width: 100%;
+
+    &--delivery {
+      margin-bottom: 50px;
+    }
+
+    &--choice {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .about__list {
   @include list;
   display: flex;
   justify-content: space-between;
-  padding: 0 5px 152px 8px;
+  padding: 0 8px 152px 4px;
 
   @media (max-width: $tablets-max) {
     flex-wrap: wrap;
-    padding: 0 5px 38px 8px;
+    padding: 0 7px 38px 5px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7px 60px 5px;
   }
 }
 
@@ -69,13 +92,25 @@
 }
 
 .about__text {
-  font-size: 22px;
-  line-height: 34px;
-  text-align: center;
-  letter-spacing: -0.5px;
+  padding: 15px 0 0;
+
+  @media (max-width: $mobiles-max) {
+    padding: 6px 0 0;
+
+    &--range {
+      padding: 15px 0 0;
+    }
+  }
 }
 
 .about__text p {
   margin: 0;
-  padding: 15px 0 0;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  @media (max-width: $mobiles-max) {
+    font-size: 18px;
+  }
 }

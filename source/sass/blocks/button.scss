@@ -8,6 +8,12 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 14px;
+  letter-spacing: 0.1px;
+
+  @media (max-width: $mobiles-max) {
+    padding-top: 5px;
+    padding-left: 2px;
+  }
 
   &--play {
     position: absolute;
@@ -16,8 +22,25 @@
     background-image: url("../img/play.svg");
     width: 65px;
     height: 65px;
-    top: 44%;
-    left: 47%;
+    top: 43.5%;
+    left: 47.5%;
+    background-repeat: no-repeat;
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/play-tablet.svg");
+      width: 90.36px;
+      height: 90.36px;
+      top: 32.4%;
+      left: 44%;
+    }
+
+    @media (max-width: $mobiles-max) {
+      background-image: url("../img/play.svg");
+      width: 65px;
+      height: 65px;
+      top: 27.4%;
+      left: 39%;
+    }
   }
 
   &:hover,

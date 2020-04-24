@@ -1,19 +1,27 @@
 .feedback {
   position: relative;
   width: 100%;
+
+  @media (max-width: $mobiles-max) {
+    padding: 0 16px;
+  }
 }
 
 .feedback__form-wrap {
   @media (min-width: $desktops) {
     position: absolute;
     top: -526px;
-    left: 58%;
+    left: 57.7%;
     width: 327px;
   }
 
   @media (max-width: $tablets-max) {
-    width: 321px;
+    width: 324px;
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobiles-max) {
+    width: 286.35px;
   }
 }
 
@@ -24,24 +32,39 @@
   line-height: 28px;
   font-weight: 600;
   margin: 23px 0 20px;
-  letter-spacing: -0.005em;
   color: #ffffff;
 
   @media (max-width: $tablets-max) {
     font-size: 18px;
     line-height: 28px;
     color: #000000;
-    margin: 71px 0 26px;
+    margin: 71px 0 28px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    margin: 71px 0 20px;
   }
 }
 
 .feedback__fieldset {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablets-max) {
+    margin-left: 2px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    margin-left: 0;
+  }
 }
 
 .feedback__item {
   margin-bottom: 20px;
+
+  @media (max-width: $tablets-max) {
+    margin-bottom: 18px;
+  }
 }
 
 .feedback__fieldset input {
@@ -52,6 +75,10 @@
 
   @media (max-width: $tablets-max) {
     padding: 17px 0 13px 0;
+  }
+
+  @media (max-width: $mobiles-max) {
+    padding: 18px 0 11px 0;
   }
 
   &::placeholder {
@@ -65,6 +92,10 @@
       color: #1c1c1c;
       opacity: 0.5;
       padding-left: 20px;
+    }
+
+    @media (max-width: $mobiles-max) {
+      padding-left: 24px;
     }
   }
 }

@@ -1,11 +1,63 @@
 .header {
   background-color: #000000;
-  background-image: url("../img/bike-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (max-width: $tablets-max) {
+    background-position: center top;
+  }
+
+  @media (max-width: $mobiles-max) {
+    background-position: center center;
+  }
+}
+
+.no-webp .header {
+  background-image: url("../img/bike-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bike-desktop@2x.jpg");
+  }
+
+
+  @media (max-width: $tablets-max) {
     background-image: url("../img/bike-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobiles-max) {
+    background-image: url("../img/bike-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-mobile@2x.jpg");
+    }
+  }
+}
+
+.webp .header {
+  background-image: url("../img/bike-desktop@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bike-desktop@2x.webp");
+  }
+
+  @media (max-width: $tablets-max) {
+    background-image: url("../img/bike-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-tablet@2x.webp");
+    }
+  }
+
+  @media (max-width: $mobiles-max) {
+    background-image: url("../img/bike-mobile@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-mobile@2x.webp");
+    }
   }
 }
 
