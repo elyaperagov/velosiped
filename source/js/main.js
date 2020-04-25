@@ -5,7 +5,6 @@
   var navToggle = document.querySelector('.main-nav__toggle');
   var input = document.querySelectorAll('input');
   var button = document.querySelector('.button--submit');
-  var main = document.querySelector('main');
   var navItems = document.querySelectorAll('.main-nav__item');
   var aboutLink = document.querySelector('.main-nav__item--about');
   var typesLink = document.querySelector('.main-nav__item--types');
@@ -49,13 +48,11 @@
       document.addEventListener('keydown', isEscEvent);
       button.setAttribute('disabled', '');
       document.body.style.overflow = 'hidden';
-      main.style.opacity = '0.7';
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       document.removeEventListener('keydown', isEscEvent);
       document.body.style.overflow = 'visible';
-      main.style.opacity = '1';
       changeFormState(input, false);
       button.removeAttribute('disabled', '');
     }
@@ -78,7 +75,7 @@
   }
 
   window.addEventListener('resize', function () {
-    if (document.documentElement.clientWidth < 1024 && navMain.classList.contains('main-nav--opened')) {
+    if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
       toggle();
     }
   });
@@ -88,14 +85,5 @@
       toggle();
     }
   };
-
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map('map', {
-      center: [59.938635, 30.323118],
-      zoom: 16
-    });
-    window.myMap = myMap;
-  }
 
 })();

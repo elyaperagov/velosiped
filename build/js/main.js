@@ -22,7 +22,7 @@
         block: 'center', behavior: 'smooth'}
       );
     });
-  }
+  };
 
   scroll(aboutLink, about);
   scroll(videoLink, video);
@@ -49,13 +49,11 @@
       document.addEventListener('keydown', isEscEvent);
       button.setAttribute('disabled', '');
       document.body.style.overflow = 'hidden';
-      main.style.opacity = '0.7';
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       document.removeEventListener('keydown', isEscEvent);
       document.body.style.overflow = 'visible';
-      main.style.opacity = '1';
       changeFormState(input, false);
       button.removeAttribute('disabled', '');
     }
@@ -73,29 +71,20 @@
         toggle();
       } else {
         return;
-      };
-    })
+      }
+    });
   }
 
-  window.addEventListener("resize", function () {
-    if (document.documentElement.clientWidth < 1024 && navMain.classList.contains('main-nav--opened')) {
+  window.addEventListener('resize', function () {
+    if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
       toggle();
     }
-  })
+  });
 
   var isEscEvent = function (evt) {
     if (evt.keyCode === ESC_KEYCODE) {
       toggle();
     }
   };
-
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map('map', {
-      center: [59.938635, 30.323118],
-      zoom: 16
-    });
-    window.myMap = myMap;
-  }
 
 })();
