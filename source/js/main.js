@@ -16,29 +16,18 @@
   var video = document.querySelector('.video');
   var location = document.querySelector('.location');
 
-  aboutLink.addEventListener('click', function () {
-    about.scrollIntoView({
-      block: 'center', behavior: 'smooth'}
-    );
-  });
+  var scroll = function (link, div) {
+    link.addEventListener('click', function () {
+      div.scrollIntoView({
+        block: 'center', behavior: 'smooth'}
+      );
+    });
+  };
 
-  videoLink.addEventListener('click', function () {
-    video.scrollIntoView({
-      block: 'center', behavior: 'smooth'}
-    );
-  });
-
-  locationLink.addEventListener('click', function () {
-    location.scrollIntoView({
-      block: 'center', behavior: 'smooth'}
-    );
-  });
-
-  typesLink.addEventListener('click', function () {
-    types.scrollIntoView({
-      block: 'center', behavior: 'smooth'}
-    );
-  });
+  scroll(aboutLink, about);
+  scroll(videoLink, video);
+  scroll(locationLink, location);
+  scroll(typesLink, types);
 
   var changeFormState = function (object, newState) {
     for (var i = 0; i < object.length; i++) {
@@ -78,14 +67,21 @@
     });
   }
 
-  if (window.matchMedia('(max-width: 1024px)').matches) {
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].addEventListener('click', function () {
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', function () {
+      if (document.documentElement.clientWidth < 1024) {
         toggle();
-      });
-    }
+      } else {
+        return;
+      }
+    });
   }
 
+  window.addEventListener('resize', function () {
+    if (document.documentElement.clientWidth < 1024 && navMain.classList.contains('main-nav--opened')) {
+      toggle();
+    }
+  });
 
   var isEscEvent = function (evt) {
     if (evt.keyCode === ESC_KEYCODE) {
