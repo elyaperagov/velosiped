@@ -49,12 +49,10 @@
       changeFormState(input, true);
       document.addEventListener('keydown', isEscEvent);
       button.setAttribute('disabled', '');
-      document.body.style.overflow = 'hidden';
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       document.removeEventListener('keydown', isEscEvent);
-      document.body.style.overflow = 'visible';
       changeFormState(input, false);
       button.removeAttribute('disabled', '');
     }
