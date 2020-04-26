@@ -1,17 +1,3 @@
-.header {
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (max-width: $tablets-max) {
-    background-position: center top;
-  }
-
-  @media (max-width: $mobiles-max) {
-    background-position: center center;
-  }
-}
-
 .no-webp .header {
   background-image: url("../img/bike-desktop@1x.jpg");
 
@@ -61,45 +47,37 @@
   }
 }
 
+.header {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bike-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bike-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablets-max) {
+    background-position: center top;
+    background-image: url("../img/bike-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobiles-max) {
+    background-position: center center;
+    background-image: url("../img/bike-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bike-mobile@2x.jpg");
+    }
+  }
+}
+
 .header__inner {
   max-width: 900px;
   margin: 0 auto;
   overflow: hidden;
 }
-
-// .header {
-//   position: absolute;
-//   width: 100%;
-//   background-color: rgba(0, 0, 0, 0.3);
-//   color: #ffffff;
-//   z-index: 2;
-//
-//   @media (min-width: $desktops) {
-//     position: absolute;
-//     min-height: 110px;
-//     width: 100%;
-//     background-color: rgba(0, 0, 0, 0.3);
-//     color: #ffffff;
-//     z-index: 2;
-//   }
-// }
-//
-// .header--absolute {
-//   position: absolute;
-// }
-//
-// .header--relative {
-//   position: relative;
-// }
-
-// .page-header__wrapper {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0 auto;
-//
-//   @media (min-width: $desktops) {
-//     @include wrapper;
-//     flex-direction: row;
-//   }
-// }

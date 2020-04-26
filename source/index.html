@@ -37,9 +37,11 @@
             <div class="general__inner">
               <div class="general__info">
                 <div class="general__icon-wrapper">
-                  <svg class="general__icon" width="68" height="21">
-                    <use xlink:href="#moon"></use>
-                  </svg>
+                  <a>
+                    <svg class="general__icon" width="68" height="21">
+                      <use xlink:href="#moon"></use>
+                    </svg>
+                  </a>
                 </div>
                 <h1>Мы продаём велосипеды</h1>
                 <div class="general__slogan">
@@ -62,7 +64,7 @@
                 </div>
                 <div class="feedback__item">
                   <label class="visually-hidden" for="feedback__phone-input"></label>
-                  <input id="feedback__phone-input" class="tel" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="">
+                  <input id="feedback__phone-input" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="">
                 </div>
                 <div class="feedback__item">
                   <button type="submit" class="button button--submit">Подобрать велосипед мечты</button>
@@ -150,7 +152,7 @@
             <h2>Видео про велосипеды</h2>
             <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя</p>
             <div class="video__snippet">
-              <button class="button button--play" aria-label="Смотреть"></button>
+              <button type="button" class="button button--play" aria-label="Смотреть"></button>
               <picture>
                 <source srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" type="image/webp">
                 <!-- 1х: 929 x 522; 2x: 1858 x 1044 -->
@@ -172,7 +174,7 @@
     <footer class="footer">
       <div class="footer__contacts">
         <div class="footer__email">
-          <a href="puteshestviemechta@gmail.ru">
+          <a href="puteshestviemechta@gmail.ru" href="mailto:puteshestviemechta@gmail.ru">
             <svg width="26" height="20">
               <use xlink:href="#email"></use>
             </svg>

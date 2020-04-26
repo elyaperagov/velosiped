@@ -16,11 +16,13 @@
   var location = document.querySelector('.location');
 
   var scroll = function (link, div) {
-    link.addEventListener('click', function () {
-      div.scrollIntoView({
-        block: 'center', behavior: 'smooth'}
-      );
-    });
+    if (link) {
+      link.addEventListener('click', function () {
+        div.scrollIntoView({
+          block: 'center', behavior: 'smooth'}
+        );
+      });
+    }
   };
 
   scroll(aboutLink, about);
@@ -68,15 +70,15 @@
     navItems[i].addEventListener('click', function () {
       if (document.documentElement.clientWidth < 1024) {
         toggle();
-      } else {
-        return;
       }
     });
   }
 
   window.addEventListener('resize', function () {
-    if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
-      toggle();
+    if (navMain) {
+      if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
+        toggle();
+      }
     }
   });
 

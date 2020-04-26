@@ -5,7 +5,6 @@
   var navToggle = document.querySelector('.main-nav__toggle');
   var input = document.querySelectorAll('input');
   var button = document.querySelector('.button--submit');
-  var main = document.querySelector('main');
   var navItems = document.querySelectorAll('.main-nav__item');
   var aboutLink = document.querySelector('.main-nav__item--about');
   var typesLink = document.querySelector('.main-nav__item--types');
@@ -17,11 +16,13 @@
   var location = document.querySelector('.location');
 
   var scroll = function (link, div) {
-    link.addEventListener('click', function () {
-      div.scrollIntoView({
-        block: 'center', behavior: 'smooth'}
-      );
-    });
+    if (link) {
+      link.addEventListener('click', function () {
+        div.scrollIntoView({
+          block: 'center', behavior: 'smooth'}
+        );
+      });
+    }
   };
 
   scroll(aboutLink, about);
@@ -76,8 +77,10 @@
   }
 
   window.addEventListener('resize', function () {
-    if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
-      toggle();
+    if(navMain) {
+      if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
+        toggle();
+      }
     }
   });
 
