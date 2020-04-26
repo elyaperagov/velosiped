@@ -5,10 +5,12 @@
 .types__list {
   @include list;
   display: flex;
-  padding: 0 0 134px 0;
+  padding: 0 0 138px;
   max-width: 1130px;
   transform: translateX(13px);
   margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @media (max-width: $tablets-max) {
     flex-wrap: wrap;
@@ -19,7 +21,7 @@
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 0 0 15px;
+    padding: 0 0 11px;
     flex-direction: column;
     align-items: center;
   }
@@ -63,6 +65,8 @@
 
   &--mountain {
     padding-top: 28px;
+    position: relative;
+    z-index: 10;
 
     &::before {
       position: absolute;

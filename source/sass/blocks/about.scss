@@ -4,11 +4,11 @@
   overflow: hidden;
 
   @media (max-width: $tablets-max) {
-    max-width: 555px;
-    // max-width: 73%;
+    margin: 0 50px;
   }
 
   @media (max-width: $mobiles-max) {
+    margin: 0 auto;
     padding: 0 15px;
     max-width: 100%;
   }
@@ -39,11 +39,31 @@
 
   @media (max-width: $tablets-max) {
     margin-bottom: 32px;
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    &:nth-child(even) {
+      padding-right: 90px;
+      padding-left: 0;
+    }
+
+    &:nth-child(odd) {
+      padding-left: 90px;
+      padding-right: 0;
+    }
   }
 
   @media (max-width: $mobiles-max) {
     margin-bottom: 23px;
     max-width: 100%;
+
+    &:nth-child(even) {
+      padding: 0;
+    }
+
+    &:nth-child(odd) {
+      padding: 0;
+    }
 
     &--delivery {
       margin-bottom: 50px;
@@ -64,6 +84,8 @@
   @media (max-width: $tablets-max) {
     flex-wrap: wrap;
     padding: 0 7px 38px 5px;
+    margin-left: -56px;
+    margin-right: -56px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -80,6 +102,11 @@
   text-align: center;
   letter-spacing: -1.27273px;
   color: #0ad9c6;
+
+  @media (max-width: $tablets-max) {
+    width: 263px;
+    margin: 0 auto;
+  }
 }
 
 .about__number p {
@@ -93,6 +120,11 @@
 
 .about__text {
   padding: 15px 0 0;
+
+  @media (max-width: $tablets-max) {
+    width: 263px;
+    margin: 0 auto;
+  }
 
   @media (max-width: $mobiles-max) {
     padding: 6px 0 0;

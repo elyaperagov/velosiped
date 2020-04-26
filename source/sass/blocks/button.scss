@@ -2,17 +2,20 @@
   border: none;
   cursor: pointer;
   background-color: #0ad9c6;
-  border-radius: 6px;
   width: 100%;
-  min-height: 51px;
   font-weight: 600;
   font-size: 15px;
   line-height: 14px;
   letter-spacing: 0.1px;
 
-  @media (max-width: $mobiles-max) {
-    padding-top: 5px;
-    padding-left: 2px;
+  &--submit {
+    min-height: 53px;
+    border-radius: 6px;
+
+    @media (max-width: $mobiles-max) {
+      padding-top: 5px;
+      padding-left: 2px;
+    }
   }
 
   &--play {
@@ -38,7 +41,7 @@
       background-image: url("../img/play.svg");
       width: 65px;
       height: 65px;
-      top: 27.4%;
+      top: 29.4%;
       left: 39%;
     }
   }
