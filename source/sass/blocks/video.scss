@@ -69,17 +69,36 @@
   transform: translateY(55px);
   text-align: center;
   position: relative;
+  background-image: url("../img/video-desktop@1x.webp");
+  background-repeat: no-repeat;
+  width: 929px;
+  min-height: 522px;
+  background-size: cover;
+  margin: 0 auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-desktop@2x.webp");
+  }
 
   @media (max-width: $tablets-max) {
+    background-image: url("../img/video-tablet@1x.webp");
     transform: translateY(42px);
-    margin: 0 auto;
     width: 503px;
     min-height: 282px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.webp");
+    }
   }
 
   @media (max-width: $mobiles-max) {
+    background-image: url("../img/video-mobile@1x.webp");
     transform: translateY(54px);
     width: 288px;
     min-height: 161.66px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-mobile@2x.webp");
+    }
   }
 }
