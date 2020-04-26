@@ -41,11 +41,12 @@
     navMain.classList.add('main-nav--closed');
   }
 
-  function OffScroll () {
+  var offScroll = function () {
     var winScrollTop = $(window).scrollTop();
-    $(window).bind('scroll',function () {
+    $(window).bind('scroll', function () {
       $(window).scrollTop(winScrollTop);
-  });}
+    });
+  };
 
 
   var toggle = function () {
@@ -55,12 +56,11 @@
       changeFormState(input, true);
       document.addEventListener('keydown', isEscEvent);
       button.setAttribute('disabled', '');
-      OffScroll();
+      offScroll();
     } else {
       navMain.classList.add('main-nav--closed');
       navMain.classList.remove('main-nav--opened');
       document.removeEventListener('keydown', isEscEvent);
-      $("body").css("overflow-x","visible");
       $(window).unbind('scroll');
       changeFormState(input, false);
       button.removeAttribute('disabled', '');
@@ -84,7 +84,7 @@
   }
 
   window.addEventListener('resize', function () {
-    if(navMain) {
+    if (navMain) {
       if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
         toggle();
       }
