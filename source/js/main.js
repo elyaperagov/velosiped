@@ -77,8 +77,6 @@
     navItems[i].addEventListener('click', function () {
       if (document.documentElement.clientWidth < 1024) {
         toggle();
-      } else {
-        return;
       }
     });
   }

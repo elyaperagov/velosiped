@@ -38,7 +38,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #000000;
-    margin: 71px 0 28px;
+    margin: 70px 0 28px;
   }
 
   @media (max-width: $mobiles-max) {
@@ -85,6 +85,7 @@
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: -0.3px;
 
     @media (max-width: $tablets-max) {
       font-size: 15px;
@@ -92,6 +93,7 @@
       color: #1c1c1c;
       opacity: 0.5;
       padding-left: 20px;
+      letter-spacing: 0.25px;
     }
 
     @media (max-width: $mobiles-max) {
