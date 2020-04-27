@@ -273,6 +273,7 @@
 
 .types__image {
   &--road {
+    background-color: #888a96;
     background-image: url("../img/dorozhniy-desktop@1x.jpg");
     background-repeat: no-repeat;
     width: 342px;
@@ -295,6 +296,7 @@
   }
 
   &--mountain {
+    background-color: #9d8b53;
     background-image: url("../img/gorniy-desktop@1x.jpg");
     background-repeat: no-repeat;
     width: 342px;
@@ -317,6 +319,7 @@
   }
 
   &--children {
+    background-color: #e2d4cd;
     background-image: url("../img/detskiy-desktop@1x.jpg");
     background-repeat: no-repeat;
     width: 342px;
