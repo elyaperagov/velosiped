@@ -16,12 +16,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     transform: none;
-    max-width: 590px;
+    margin: 0 -89px;
     padding: 0 0 55px;
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 0 0 11px;
+    padding: 0 0 15px;
     flex-direction: column;
     align-items: center;
   }
@@ -48,7 +48,7 @@
         background-image: url("../img/big-ellips-tablet.svg");
         width: 127px;
         height: 127px;
-        left: -37px;
+        left: 26px;
         top: 200px;
       }
 
@@ -136,23 +136,94 @@
   }
 
   @media (max-width: $tablets-max) {
-    width: 270px;
-    padding-right: 0;
+    flex: 0 0 270px;
+    margin: 0 auto;
+
+    &:nth-child(even) {
+      padding-right: 66px;
+      padding-left: 0;
+    }
+
+    &:nth-child(odd) {
+      padding-left: 66px;
+      padding-right: 0;
+    }
+
+    &--children {
+      transform: translateX(-32px);
+    }
   }
 
   @media (max-width: $mobiles-max) {
-    padding-bottom: 26px;
-    padding-top: 0;
+    margin-bottom: 25px;
+
+    &:nth-child(even) {
+      padding: 0;
+    }
+
+    &:nth-child(odd) {
+      padding: 0;
+    }
+
+    &--children {
+      transform: none;
+    }
+  }
+}
+
+.no-webp .types__image {
+  &--road {
+    background-image: url("../img/dorozhniy-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/dorozhniy-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/dorozhniy-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/dorozhniy-tablet@2x.jpg");
+      }
+    }
+  }
+
+  &--mountain {
+    background-image: url("../img/gorniy-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gorniy-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/gorniy-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/gorniy-tablet@2x.jpg");
+      }
+    }
+  }
+
+  &--children {
+    background-image: url("../img/detskiy-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/detskiy-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablets-max) {
+      background-image: url("../img/detskiy-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/detskiy-tablet@2x.jpg");
+      }
+    }
   }
 }
 
 .webp .types__image {
   &--road {
     background-image: url("../img/dorozhniy-desktop@1x.webp");
-    background-repeat: no-repeat;
-    width: 342px;
-    min-height: 503px;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/dorozhniy-desktop@2x.webp");
@@ -160,8 +231,6 @@
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/dorozhniy-tablet@1x.webp");
-      width: 270px;
-      min-height: 300px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/dorozhniy-tablet@2x.webp");
@@ -171,10 +240,6 @@
 
   &--mountain {
     background-image: url("../img/gorniy-desktop@1x.webp");
-    background-repeat: no-repeat;
-    width: 342px;
-    min-height: 566px;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gorniy-desktop@2x.webp");
@@ -182,8 +247,6 @@
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/gorniy-tablet@1x.webp");
-      width: 270px;
-      min-height: 300px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/gorniy-tablet@2x.webp");
@@ -193,10 +256,6 @@
 
   &--children {
     background-image: url("../img/detskiy-desktop@1x.webp");
-    background-repeat: no-repeat;
-    width: 342px;
-    min-height: 512.59px;
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/detskiy-desktop@2x.webp");
@@ -204,8 +263,6 @@
 
     @media (max-width: $tablets-max) {
       background-image: url("../img/detskiy-tablet@1x.webp");
-      width: 270px;
-      min-height: 300px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/detskiy-tablet@2x.webp");
@@ -213,7 +270,6 @@
     }
   }
 }
-
 
 .types__image {
   &--road {
@@ -323,6 +379,7 @@
 
   @media (max-width: $tablets-max) {
     padding: 0 89px;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobiles-max) {
