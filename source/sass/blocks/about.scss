@@ -80,6 +80,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 8px 152px 4px;
+  flex-wrap: wrap;
 
   @media (max-width: $tablets-max) {
     flex-wrap: wrap;

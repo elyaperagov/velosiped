@@ -48,9 +48,7 @@
                   </a>
                 </div>
                 <h1>Мы продаём велосипеды</h1>
-                <div class="general__slogan">
-                  <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-                </div>
+                <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
               </div>
             </div>
           </section>
@@ -58,23 +56,25 @@
       </header>
       <main>
         <div class="feedback">
-          <div class="feedback__form-wrap">
-            <p>Заполните поля ниже и мы подберём велосипед Вашей мечты</p>
-            <form method="POST" action="https://echo.htmlacademy.ru">
-              <div class="feedback__fieldset">
-                <div class="feedback__item">
-                  <label class="visually-hidden" for="feedback__name-input"></label>
-                  <input id="feedback__name-input" name="name" type="text" placeholder="Введите Ваше Имя" required="">
+          <div class="feedback__inner">
+            <div class="feedback__form-wrap">
+              <p>Заполните поля ниже и мы подберём велосипед Вашей мечты</p>
+              <form method="POST" action="https://echo.htmlacademy.ru">
+                <div class="feedback__fieldset">
+                  <div class="feedback__item">
+                    <label class="visually-hidden" for="feedback__name-input"></label>
+                    <input id="feedback__name-input" name="name" type="text" placeholder="Введите Ваше Имя" required="">
+                  </div>
+                  <div class="feedback__item">
+                    <label class="visually-hidden" for="feedback__phone-input"></label>
+                    <input id="feedback__phone-input" name="phone" type="tel" placeholder="Введите Ваш номер телефона" min="5" required="">
+                  </div>
+                  <div class="feedback__item">
+                    <button type="submit" class="button button--submit">Подобрать велосипед мечты</button>
+                  </div>
                 </div>
-                <div class="feedback__item">
-                  <label class="visually-hidden" for="feedback__phone-input"></label>
-                  <input id="feedback__phone-input" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="">
-                </div>
-                <div class="feedback__item">
-                  <button type="submit" class="button button--submit">Подобрать велосипед мечты</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
         <section class="about">

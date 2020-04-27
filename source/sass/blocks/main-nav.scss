@@ -9,7 +9,8 @@
     &::after {
       position: absolute;
       content: "";
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
       width: 97%;
       left: 13px;
       top: 61px;
@@ -24,6 +25,7 @@
 /*кнопка*/
 .main-nav__toggle {
   position: absolute;
+  outline: none;
   top: 0;
   right: 0;
   z-index: 3;
@@ -203,7 +205,7 @@
   @include list;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablets-max) {
@@ -223,6 +225,14 @@
 .main-nav__item {
   position: relative;
 
+  @media (min-width: $desktops) {
+    padding-right: 133px;
+
+    &:nth-child(4n) {
+      padding-right: 0;
+    }
+  }
+
   &:hover {
     opacity: 0.7;
     cursor: pointer;
@@ -234,6 +244,10 @@
   font-size: 16px;
   line-height: 32px;
   opacity: 0.7;
+
+  @media (min-width: $desktops) {
+    letter-spacing: -0.3px;
+  }
 
   @media (max-width: $tablets-max) {
     color: #48494d;

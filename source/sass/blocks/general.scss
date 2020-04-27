@@ -31,6 +31,10 @@
   @media (max-width: $tablets-max) {
     padding: 0;
   }
+
+  @media (min-width: $desktops) {
+    max-height: 302.27px;
+  }
 }
 
 .general__icon-wrapper {

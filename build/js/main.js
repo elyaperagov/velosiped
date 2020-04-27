@@ -14,6 +14,7 @@
   var types = document.querySelector('.types');
   var video = document.querySelector('.video');
   var location = document.querySelector('.location');
+  var phoneNumber = document.querySelector('#feedback__phone-input');
 
   var scroll = function (link, div) {
     if (link) {
@@ -96,7 +97,15 @@
   };
 
   $(function () {
-    $('#feedback__phone-input').mask('+7(999) 999-9999');
+    $(phoneNumber).mask('+7(999) 999-9999');
+
+    phoneNumber.addEventListener('invalid', function () {
+      if (phoneNumber.validity.valueMissing) {
+        phoneNumber.setCustomValidity('Это обязательное поле');
+      } else {
+        phoneNumber.setCustomValidity('');
+      }
+    });
   });
 
 })();

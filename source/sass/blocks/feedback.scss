@@ -1,5 +1,5 @@
 .feedback {
-  position: relative;
+  // position: relative;
   width: 100%;
 
   @media (max-width: $mobiles-max) {
@@ -7,10 +7,16 @@
   }
 }
 
+.feedback__inner {
+  position: relative;
+}
+
 .feedback__form-wrap {
   @media (min-width: $desktops) {
     position: absolute;
     top: -526px;
+    // transform: translateY(-626px);
+    // bottom: 350px;
     left: 57.7%;
     width: 327px;
   }
@@ -74,11 +80,11 @@
   padding: 17px 0 11px 30px;
 
   @media (max-width: $tablets-max) {
-    padding: 17px 0 13px 0;
+    padding: 17px 0 13px 20px;
   }
 
   @media (max-width: $mobiles-max) {
-    padding: 18px 0 11px 0;
+    padding: 18px 0 11px 24px;
   }
 
   &::placeholder {
@@ -92,12 +98,7 @@
       line-height: 24px;
       color: #1c1c1c;
       opacity: 0.5;
-      padding-left: 20px;
       letter-spacing: 0.25px;
-    }
-
-    @media (max-width: $mobiles-max) {
-      padding-left: 24px;
     }
   }
 }
