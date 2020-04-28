@@ -5,7 +5,7 @@
 .types__list {
   @include list;
   display: flex;
-  padding: 0 0 138px;
+  padding: 0 0 131px;
   max-width: 1130px;
   transform: translateX(13px);
   margin: 0 auto;
@@ -41,7 +41,7 @@
       width: 180px;
       height: 180px;
       top: 154px;
-      left: -58px;
+      left: -60px;
       z-index: -1;
 
       @media (max-width: $tablets-max) {
@@ -75,7 +75,7 @@
       width: 37px;
       height: 37px;
       top: 15px;
-      left: -12px;
+      left: -15px;
       z-index: 2;
 
       @media (max-width: $tablets-max) {
@@ -89,8 +89,8 @@
       background-image: url("../img/rectangle-desktop.svg");
       width: 47px;
       height: 47px;
-      bottom: 46px;
-      right: 25px;
+      bottom: 49px;
+      right: 28px;
       z-index: 2;
 
       @media (max-width: $tablets-max) {
@@ -113,7 +113,7 @@
       width: 95px;
       height: 95px;
       top: -32px;
-      right: -38px;
+      right: -35px;
       z-index: 2;
 
       @media (max-width: $tablets-max) {
@@ -348,7 +348,7 @@
   line-height: 34px;
   text-align: center;
   letter-spacing: -0.5px;
-  margin: 15px 0;
+  margin: 19px 0;
 
   @media (max-width: $tablets-max) {
     margin: 19px 0 17px;
@@ -361,7 +361,7 @@
   line-height: 30px;
   text-align: center;
   margin: 0 auto;
-  padding: 153px 0 60px;
+  padding: 153px 0 58px;
   transform: translateX(-7px);
 
   @media (max-width: $tablets-max) {

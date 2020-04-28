@@ -51,6 +51,7 @@
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-image: url("../img/bike-desktop@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -58,7 +59,7 @@
   }
 
   @media (max-width: $tablets-max) {
-    background-position: center top;
+    background-position: center center;
     background-image: url("../img/bike-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
