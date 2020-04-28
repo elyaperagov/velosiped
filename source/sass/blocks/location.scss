@@ -1,6 +1,7 @@
 .location {
   padding: 251px 0 0;
   margin: 0 auto;
+  max-width: 1920px;
 
   @media (max-width: $tablets-max) {
     padding: 156px 0 0;

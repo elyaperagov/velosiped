@@ -14,7 +14,7 @@
   var content = document.querySelector('.content');
   var general = document.querySelector('.general');
 
-  function fname(link) {
+  var scroll = function(link) {
     $(link).on('click', function () {
       var href = $(link).attr('href');
 
@@ -28,10 +28,10 @@
     });
   }
 
-  fname(aboutLink);
-  fname(typesLink);
-  fname(videoLink);
-  fname(locationLink);
+  scroll(aboutLink);
+  scroll(typesLink);
+  scroll(videoLink);
+  scroll(locationLink);
 
   var changeFormState = function (object, newState) {
     for (var i = 0; i < object.length; i++) {
@@ -126,8 +126,6 @@
     navItems[i].addEventListener('click', function () {
       if (document.documentElement.clientWidth < 1024) {
         toggle();
-      } else {
-        return;
       }
     });
   }
@@ -151,7 +149,7 @@
 
     phoneNumber.addEventListener('invalid', function () {
       if (phoneNumber.validity.valueMissing) {
-        phoneNumber.setCustomValidity('Это обязательное поле');
+        phoneNumber.setCustomValidity('Это обязательное поле. Нужно ввести номер телефона полностью');
       } else {
         phoneNumber.setCustomValidity('');
       }

@@ -14,7 +14,7 @@
   var content = document.querySelector('.content');
   var general = document.querySelector('.general');
 
-  function fname(link) {
+  var scroll = function (link) {
     $(link).on('click', function () {
       var href = $(link).attr('href');
 
@@ -26,12 +26,12 @@
       });
       // return false;
     });
-  }
+  };
 
-  fname(aboutLink);
-  fname(typesLink);
-  fname(videoLink);
-  fname(locationLink);
+  scroll(aboutLink);
+  scroll(typesLink);
+  scroll(videoLink);
+  scroll(locationLink);
 
   var changeFormState = function (object, newState) {
     for (var i = 0; i < object.length; i++) {

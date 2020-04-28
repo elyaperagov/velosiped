@@ -13,6 +13,8 @@
 
 .video__inner {
   padding: 121px 0 0;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: $tablets-max) {
     padding: 70px 0 0;
