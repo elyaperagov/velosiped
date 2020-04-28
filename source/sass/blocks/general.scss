@@ -1,6 +1,19 @@
 .general {
   @media (max-width: $tablets-max) {
     padding-top: 21px;
+
+    &--faded {
+      background-color: rgba(0, 0, 0, 0.8);
+
+      .general__inner p,
+      .general__inner h1 {
+        color: #000000;
+      }
+
+      .general__icon {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: $mobiles-max) {
