@@ -1,5 +1,4 @@
 .feedback {
-  // position: relative;
   width: 100%;
 
   @media (max-width: $mobiles-max) {
@@ -15,8 +14,6 @@
   @media (min-width: $desktops) {
     position: absolute;
     top: -526px;
-    // transform: translateY(-626px);
-    // bottom: 350px;
     left: 57.8%;
     width: 327px;
   }
@@ -68,10 +65,6 @@
 .feedback__item {
   margin-bottom: 20px;
 
-  // &--phone {
-  //   margin-bottom: 17px;
-  // }
-
   @media (max-width: $tablets-max) {
     margin-bottom: 18px;
     margin-right: 4px;
@@ -86,7 +79,6 @@
   width: 100%;
   border: 1px solid #c9ccd4;
   border-radius: 6px;
-  // padding: 16px 0 14px 27px;
   padding: 13px 0 7px 27px;
   min-height: 48px;
 
