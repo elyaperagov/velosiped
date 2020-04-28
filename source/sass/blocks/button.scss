@@ -14,6 +14,12 @@
     letter-spacing: 0.4px;
     width: 99.4%;
 
+    @media (max-width: $tablets-max) {
+      letter-spacing: 0.1px;
+      width: 100%;
+      padding-left: 11px;
+    }
+
     @media (max-width: $mobiles-max) {
       padding-top: 5px;
       padding-left: 2px;

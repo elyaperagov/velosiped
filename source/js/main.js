@@ -149,7 +149,7 @@
 
     phoneNumber.addEventListener('invalid', function () {
       if (phoneNumber.validity.valueMissing) {
-        phoneNumber.setCustomValidity('Это обязательное поле');
+        phoneNumber.setCustomValidity('Это обязательное поле. Нужно ввести номер телефона полностью');
       } else {
         phoneNumber.setCustomValidity('');
       }
