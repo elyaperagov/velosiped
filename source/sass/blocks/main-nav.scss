@@ -216,7 +216,7 @@
   }
 }
 
-@media (max-width: $desktops) {
+@media (max-width: $tablets-max) {
   .main-nav--closed .main-nav__item {
     display: none;
   }

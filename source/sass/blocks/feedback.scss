@@ -17,7 +17,7 @@
     top: -526px;
     // transform: translateY(-626px);
     // bottom: 350px;
-    left: 57.7%;
+    left: 57.8%;
     width: 327px;
   }
 
@@ -37,7 +37,7 @@
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
-  margin: 23px 0 20px;
+  margin: 23px 0 18px;
   color: #ffffff;
 
   @media (max-width: $tablets-max) {
@@ -68,8 +68,17 @@
 .feedback__item {
   margin-bottom: 20px;
 
+  // &--phone {
+  //   margin-bottom: 17px;
+  // }
+
   @media (max-width: $tablets-max) {
     margin-bottom: 18px;
+    margin-right: 4px;
+  }
+
+  @media (max-width: $mobiles-max) {
+    margin-right: 0;
   }
 }
 
@@ -77,7 +86,9 @@
   width: 100%;
   border: 1px solid #c9ccd4;
   border-radius: 6px;
-  padding: 17px 0 11px 30px;
+  // padding: 16px 0 14px 27px;
+  padding: 13px 0 7px 27px;
+  min-height: 48px;
 
   @media (max-width: $tablets-max) {
     padding: 17px 0 13px 20px;

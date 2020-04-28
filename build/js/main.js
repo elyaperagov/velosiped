@@ -76,7 +76,7 @@
 
   for (var i = 0; i < navItems.length; i++) {
     navItems[i].addEventListener('click', function () {
-      if (document.documentElement.clientWidth < 1024) {
+      if (document.documentElement.clientWidth < 1023) {
         toggle();
       }
     });
@@ -84,11 +84,12 @@
 
   window.addEventListener('resize', function () {
     if (navMain) {
-      if (document.documentElement.clientWidth >= 1024 && navMain.classList.contains('main-nav--opened')) {
+      if (document.documentElement.clientWidth >= 1024 || navMain.classList.contains('main-nav--opened')) {
         toggle();
       }
     }
   });
+
 
   var isEscEvent = function (evt) {
     if (evt.keyCode === ESC_KEYCODE) {
