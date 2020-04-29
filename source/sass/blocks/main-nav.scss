@@ -4,17 +4,10 @@
   @media (min-width: $desktops) {
     max-width: 900px;
     margin: 0 auto;
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      height: 1px;
-      background-color: rgba(255, 255, 255, 0.2);
-      width: 97%;
-      left: 13px;
-      top: 61px;
-    }
+    background-image: url('../img/line.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 21px 34px 10px 32px;
   }
 
   @media (max-width: $tablets-max) {
