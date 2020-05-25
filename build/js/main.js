@@ -14,7 +14,7 @@
   var content = document.querySelector('.content');
   var general = document.querySelector('.general');
 
-  var scroll = function(link) {
+  var scroll = function (link) {
     $(link).on('click', function () {
       var href = $(link).attr('href');
 
@@ -26,7 +26,7 @@
       });
       // return false;
     });
-  }
+  };
 
   scroll(aboutLink);
   scroll(typesLink);
